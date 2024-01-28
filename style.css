@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Start*/
+header {
+    background-color: #39A9DB;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+}
+.title {
+    color: #C5E7E2;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+header .links {
+    display:inline-block;
+}
+header .links a {
+    color:white;
+    margin-right:1vw;
+    text-decoration: none;
+    background-color: #247BA0;
+    padding: 10px;
+    border-radius: 5px;  
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.7s ease;   
+}
+.links a:hover {
+    background-color: #c3d3e3;
+}
+
+/* Header End*/
+
+/* Video and Slogan Start*/
+
+.video-container {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#vidbg {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+.slogan {
+    font-family: Arial;
+    font-size: 7.5vh;
+    font-weight: 200;
+    color: white;
+    opacity: 0.9;
+    animation: sloganmotion 35s linear infinite;
+}
+@keyframes sloganmotion {
+    0% { transform:translate(0vw, 0vw);}
+    33% { transform:translate(0vw, 15vw); }
+    67% { transform:translate(0vw,-15vw); }
+    100% { transform:translate(0vw,  0vw);}
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Video and Slogan End */
+
+/* Section and Footer Start */
+.section1 {
+    background: rgb(2,9,74); /* First Section, had to assign different sections for each page to make it work */
+    background: linear-gradient(90deg, rgba(2,9,74,1) 2%, rgba(15,20,121,1) 97%);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text1{
+    margin-top: 4vh;
+    text-align: center;
+}
+.text1 p{
+    color: black;
+    font-family: Arial;
+}
+.text1 h1 {
+    color: white;
+    font-family: Arial;
+    font-weight: Bold;
+    margin-bottom: 1.5vh;
+}
+footer{
+    background-color: #39A9DB;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    align-items: center;
+    height: 10vh;
+}
+.icon {
+    background: url(sprites/sprites.png);
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+    position: relative;
+}
+#yt {
+    background-position: -439px -221px;
+}
+#fb {
+    background-position: -439px -146px;
+}
+#pt {
+    background-position: -141px -221px;
+}
+
+.copyright img{
+   max-height: 3vh;
+   border-radius: 10px;
+}
+.closeup {
+    height: 100vh;
+    display: flex;
+   align-items: center;
+}
+.closeup img{
+   width:100vw;
+}
+
+/* Section and Footer End */
+
+/* Page 2: Section */
+
+.section2 {
+    background: rgb(2,9,74);
+    background: linear-gradient(90deg, rgba(2,9,74,1) 2%, rgba(15,20,121,1) 97%);
+    height:90vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+
+   
+}
+.img1 {
+    margin-top: 6vh;
+    margin-bottom: 2dvh;
+}
+.img1 img{
+    width: 90vw;
+    height:25vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}
+.img1 img:hover {
+    transform: rotate(-5deg) scale(1.05);
+}
+.atext1{
+    margin-top: 3vh;
+    text-align: center;
+}
+.atext1 h1 {
+    color: white;
+    font-family: Arial;
+    font-weight: Bold;
+    margin-bottom: 2vh;
+}
+.atext1 p{
+    color: black;
+    font-family: Arial;
+}
+
+/* Page 2: Section End*/
+
+/* Page 3: Section Start*/
+
+.section3 {
+    background: rgb(2,9,74);
+    background: linear-gradient(90deg, rgba(2,9,74,1) 2%, rgba(15,20,121,1) 97%);
+    height:90vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.btext1 h1{
+    margin-top: 3vh;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: Bold;
+}
+.btext1 p {
+    width: 40%;
+    float: right;
+    margin-top: 3vh;
+    margin-right: 3vw;
+    color: black;
+    font-family: Arial;
+    text-align: center;
+}
+.btext1 #image1 { 
+    margin-top: 1vh;
+    width: 20%;
+    height: 20vh;
+    margin-left: 10vw;
+}
+#image1 {
+    width:10vw;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}
+#image1:hover {
+    transform: rotate(5deg) scale(1.2);
+}
+
+.btext2 {
+    float: left;
+    width: 40%;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+.btext2 h1 {
+   margin-bottom: 1vh;
+   text-align: center;
+   color: white;
+   font-family: Arial;
+   font-weight: Bold;
+}
+.btext2 p {
+    text-align: center;
+    color: black;
+    font-family: Arial;
+}
+.btext3 h1 {
+    margin-bottom: 1vh;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: Bold;
+}
+.btext3 p {
+    text-align: center;
+    color: black;
+    font-family: Arial;
+}
+.btext3{
+    margin-top: 5vh;
+    float: right;
+    width: 40%;
+    margin-right: 3vw;
+}
+.btext4 {
+   margin-top: 30vh;
+}
+.btext4 h1{
+    color: white;
+    font-family: Arial;
+    font-weight: Bold;
+    text-align: center;
+}
+.btext4 p {
+    width: 40%;
+    float: left;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    text-align: center;
+    color: black;
+    font-family: Arial;
+}
+ #image2 {
+    margin-top: 3vh;
+    width: 20%;
+    height: 17.5vh;
+    margin-left: 10vw;
+    float: right;
+    margin-right: 10vw;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    cursor: pointer;
+}
+#image2:hover {
+    transform: rotate(-5deg) scale(1.2);
+}
+
+/* Page 3: Section End */
+
+/* Responsive Designs: Text-Oriented Start */
+
+@media only screen and (max-width: 600px)
+{
+    .links a{
+        font-size: 1.5vh;
+    }
+    .slogan {
+        font-size: 5vh;
+    }
+    .text1 h1 {
+        font-size: 2.2vh;
+    }
+    .text1 p {
+        font-size: 1.6vh;
+    }
+    .text2 h1 {
+        font-size: 2.2vh;
+    }
+    .text2 p {
+        font-size: 1.5vh;
+    }
+    
+    .btext {
+        font-size: 1.5vh;
+    }   
+}
+
+
+@media only screen and (min-width: 992px)
+{
+
+    .text1 {
+        width: 80vw;
+    }
+    .text1 h1 {
+        font-size: 3.5vh;
+    }
+    .text1 p {
+        font-size: 2vh;
+    }
+    .text2 {
+        width: 80vw;
+    }
+    .text2 h1 {
+        font-size: 3.5vh;
+    }
+    .text2 p {
+        font-size: 1.75vh;
+    }
+    .btext {
+        width: 87.5vw;
+    }
+    .btext h1 {
+        font-size: 4vh;
+    }
+    .btext p {
+        font-size: 1.9vh;
+    }
+}
+
+/* Responsive Designs: Text-Oriented End */
